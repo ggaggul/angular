@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-core-blank-layout',
+  selector: 'app-blank-layout',
   templateUrl: './blankLayout.template.html'
 })
 export class BlankLayoutComponent {

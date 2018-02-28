@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-core-basic-layout',
+  selector: 'app-basic-layout',
   templateUrl: './basicLayout.template.html'
 })
 export class BasicLayoutComponent implements OnInit {
