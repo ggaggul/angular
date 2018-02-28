@@ -1,0 +1,18 @@
+<nav class="navbar-default navbar-static-side" role="navigation" id="side-menu">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu sellerst-nav">
+      <li class="nav-header">
+
+      </li>
+
+      <li [ngClass]="{active: activeRoute('main')}">
+        <a href="#"></a>
+        <ul class="" [ngClass]="{in: activeRoute('main')}">
+          <li [ngClass]="{active: activeRoute('')}"><a [routerLink]="['']">menu1</a></li>
+          <li [ngClass]="{active: activeRoute('')}"><a [routerLink]="['']">menu2</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</nav>
