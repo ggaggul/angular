@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'topnavbar',
+  selector: 'app-core-topnavbar',
   templateUrl: './topnavbar.template.html'
 })
 

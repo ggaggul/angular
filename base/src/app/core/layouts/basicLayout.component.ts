@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'basic',
-  templateUrl: './basicLayout.template.html',
-  host: {
-    '(window:resize)': 'onResize()'
-  }
+  selector: 'app-core-basic-layout',
+  templateUrl: './basicLayout.template.html'
 })
-export class BasicLayoutComponent implements OnInit{
-  constructor(){}
+export class BasicLayoutComponent implements OnInit {
 
-  ngOnInit():any {
+  @HostListener('resize') resize() {
+    // do work
   }
 
-  onResize(){
+  constructor () {}
+
+  ngOnInit(): any {
   }
 
-  onDeactivate() {
+  onDeactivate () {
     window.scrollTo(0, 0);
   }
 

@@ -1,11 +1,11 @@
-import {Routes} from "@angular/router";
+import {Routes} from '@angular/router';
 
 // Base
-import {BasicLayoutComponent} from "./core/layouts/basicLayout.component";
-import {MainpageComponent} from "./main/home/mainpage.component";
+import {BasicLayoutComponent} from './core/layouts/basicLayout.component';
+import {MainpageComponent} from './main/home/mainpage.component';
 
 // Mainpage
-export const ROUTES:Routes = [
+export const ROUTES: Routes = [
     // Main redirect
     {path: '', pathMatch: 'full', redirectTo: 'main'},
 
@@ -18,7 +18,7 @@ export const ROUTES:Routes = [
       ]
     },
 
-    //lazy loading menu
+    // lazy loading menu
     /*{path: 'main', loadChildren : './main/mainpage.module#MainpageModule', canActivateChild: [SellerGuard]},*/
     /*{path: 'product', loadChildren : './product/product.module#ProductModule', data: { preload: true }},*/
 

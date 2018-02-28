@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
-import {BrowserModule} from "@angular/platform-browser";
+import {BrowserModule} from '@angular/platform-browser';
 
-import {MainpageComponent} from "./home/mainpage.component";
-import {MainpageService} from "./shared/mainpage.service";
+import {MainpageComponent} from './home/mainpage.component';
+import {MainpageService} from './shared/mainpage.service';
 
 @NgModule({
     imports : [

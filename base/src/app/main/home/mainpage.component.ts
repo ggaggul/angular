@@ -1,17 +1,16 @@
 import {Component, AfterViewInit} from '@angular/core';
-import {Router} from "@angular/router";
 
 @Component({
-  selector : 'mainpage',
+  selector : 'app-main-mainpage',
   templateUrl : './mainpage.template.html'
 })
 
 export class MainpageComponent implements AfterViewInit {
 
-  constructor (){
+  constructor() {
   }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
       this.init();
   }
 

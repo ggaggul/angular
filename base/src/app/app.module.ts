@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CoreModule } from "./core/core.module";
+import { CoreModule } from './core/core.module';
 import { ROUTES } from './app.routes';
 
 // Mainpage
-import {MainpageModule} from "./main/mainpage.module";
+import {MainpageModule} from './main/mainpage.module';
 
 
 @NgModule({
@@ -15,14 +15,14 @@ import {MainpageModule} from "./main/mainpage.module";
     AppComponent
   ],
   imports: [
-    //Base
+    // Base
     BrowserModule,
     CoreModule,
 
-    //Route
+    // Route
     RouterModule.forRoot(ROUTES, /*{ preloadingStrategy: AppCustomPreloader }*/),
 
-    //Pages
+    // Pages
     MainpageModule
   ],
   providers: [],
