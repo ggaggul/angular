@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/* main */
+.mainhead {
+    background: #ed8400 url(#{$assetPath}/logo_sometime.png) 50% 30px no-repeat;
+    background-size: 150px;
+    padding: 140px 2% 3% 2%;
+    text-align: center;
+    color: #FFF
+}
+.mainhead .title {
+    font-size: 1.7em
+}
+.mainhead .notice {
+    border-radius: 3px;
+    background: #ffffff url(#{$assetPath}/speaker.png) 3% 50% no-repeat;
+    background-size: 20px;
+    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.35);
+    color: #2c2c2c;
+    line-height: 44px;
+    margin: 15px 0 0 0;
+    text-indent: 30px;
+}
+.mainhead .notice a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mainbutton {
+    height: 80px;
+    margin: 2%;
+}
+.mainbutton a {
+    display: block;
+    width: 49%;
+    height: 100%;
+    border-radius: 3px;
+}
+.mainbutton a span {
+    color: #FFF;
+    display: inline-block;
+    padding: 20px 0 0 46%;
+    font-size: 1.125em
+}
+.mainbutton .reservation {
+    float: left;
+    background: #f9a23b url(#{$assetPath}/clock_l.png) 20% 50% no-repeat;
+    background-size: 46.5px 43.5px;
+
+}
+.mainbutton .about {
+    float: right;
+    background: #e7702e url(#{$assetPath}/newspaper.png) 20% 50% no-repeat;
+    background-size: 40.5px 42px;
+}
+
+.container.main {
+    padding: 0 0 70px 0;
+	background: #FFF
+}
+.main .hotdeal {
+}
+.main .hotdeal .title {
+    padding: 3%;
+    font-size: 1.2em;
+}
+.main .hotdeal .title img {
+    width: 15px;
+    margin: 0 8px 0 0;
+}
+.main .hotdeal li {
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+}
+.main .hotdeal li:first-child {
+    margin: 0 0 0 3%;
+    vertical-align: top;
+}
+.main .hotdeal li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.main .hotdeal ul.area {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #f3f3f3;
+    line-height: 37px;
+}
+.main .hotdeal ul.area .active {
+    border-bottom: 3px solid #e7702e;
+}
+.main .hotdeal ul.area .active span {
+    color: #e7702e
+}
+.main .hotdeal ul.tutor {
+    border-bottom: 1px solid #cccccc;
+    background: #f3f3f3
+}
+.main .hotdeal ul.tutor li {
+    vertical-align: top;
+    text-align: center;
+    padding: 8px 0 8px 0;
+}
+.main .hotdeal ul.tutor a {
+    font-size: 0.8em
+}
+.main .hotdeal ul.tutor a > div {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 0 0 3%;
+}
+.main .review {
+    width: 96%;
+    margin: 2%;
+}
+.main .review th {
+    text-align: left;
+    padding: 3px 0 3px 10px
+}
+.main .review td {
+    padding: 3px 0 3px 0
+}
+
+/* reservation */
+.reservhead {
+}
+.reservhead .button {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    border-radius: 3px;
+    background: #3e3a44 url(#{$assetPath}/clock_s.png) 20% 50% no-repeat;
+    background-size: 20px;
+    text-align: center;
+    color: #FFF
+
+}
+.reservhead .tblcontainer {
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2.5px 0 rgba(0, 0, 0, 0.3);
+    margin: 2% 0 0 0;
+}
+.reservhead .tblcontainer table {
+    width: 96%;
+    margin: 0 auto;
+}
+.reservhead th, .reservhead td {
+    border-bottom: 1px solid #ccc;
+    line-height: 38px;
+}
+.reservhead tr:last-child th, .reservhead tr:last-child td {
+    border: none
+}
+.reservhead th {
+    color: #2c2c2c;
+    text-align: left;
+    padding: 0 0 0 18%
+}
+.reservhead td {
+    color: #555;
+}
+.reservhead .search  > div:nth-child(1) {
+    margin: 0 0 8px 0;
+}
+.reservhead .search input[type=text] {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: none;
+    margin-right: -40px;
+    text-indent: 3%;
+    display: inline-block;
+    font-size: 1.2em
+}
+.reservhead .search .srcbutton {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border: none;
+    background: #fff url(#{$assetPath}/search.png) 50% 50% no-repeat;
+    background-size: 50%;
+    margin: 0 0 0 -20px;
+    vertical-align: middle;
+    font-size: 0;
+    text-indent: -9999px;
+}
+.reservtable .date {
+    text-align: center;
+}
+.reservtable .date td {
+    width: 14.28%;
+    padding: 4px 0 4px 0;
+}
+.reservtable .date span {
+    color: #ff6000;
+    font-weight: bold;
+}
+.reservtable .date a {
+    display: block;
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    font-size: 1.15em;
+}
+.reservtable .date a.active {
+    background: #e7702e;
+    color: #FFF;
+}
+.reservtable .today {
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px 0 10px 0;
+}
+.reservtable .selecttime {
+    margin: 3% 0 0 3%;
+    clear: both;
+    height: 105px;
+}
+.reservtable .selecttime .title {
+    font-size: 1em;
+    color: #111;
+}
+.reservtable .selecttime .time {
+    border-radius: 1.5px;
+    background-color: #eceaea;
+    border: solid 1px #bfbfbf;
+    width: 23%;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 1em;
+    color: #111;
+    text-align: center;
+    float: left;
+    margin: 1% 1% 0 0
+}
+.reservtable .selecttime .time.done {
+    background-color: #787878;
+    border: solid 1px #787878;
+    color: #eceaea;
+}
+.reservtable .selecttime .time.done span {
+    color: #ffb821;
+    font-size: 0.75em
+}
+.reservtable .search {
+    width: 100%
+}
+.tutorlist {
+}
+.tutorlist td {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0 10px 0
+}
+.tutorlist .photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.tutorlist .area {
+    color: #ff6000;
+    font-size: 1.1em;
+}
+.tutorlist .name {
+    color: #2c2c2c;
+    font-size: 1.1em;
+}
+.tutorlist .kind {
+    color: #818181;
+    font-size: 0.8em;
+    display: block;
+}
+.tutorlist .rating {
+    margin: 0 auto;
+    text-align: center;
+}
+.tutorlist .rating img {
+    width: 12px
+}
+.tutorlist .rating p span {
+    color: #888
+}

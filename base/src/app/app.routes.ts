@@ -4,6 +4,8 @@ import {Routes} from '@angular/router';
 import {BasicLayoutComponent} from './core/layouts/basicLayout.component';
 import {MainpageComponent} from './main/home/mainpage.component';
 
+import {TimetableComponent} from './reservation/timetable.component';
+
 // Mainpage
 export const ROUTES: Routes = [
     // Main redirect
@@ -17,6 +19,13 @@ export const ROUTES: Routes = [
         {path: 'index', component: MainpageComponent}
       ]
     },
+    
+    {
+	    path: 'reservation', component: BasicLayoutComponent
+	    children: [
+	        {path: 'timetable', component: TimetableComponent}
+	    ]
+	},
 
     // lazy loading menu
     /*{path: 'main', loadChildren : './main/mainpage.module#MainpageModule', canActivateChild: [SellerGuard]},*/

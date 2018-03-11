@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* layout */
+.wrap {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+	background: #FFF;
+}
+.header {
+	width: 100%;
+	max-width: 600px;
+    height: 50px;
+    line-height: 50px;
+	position: fixed;
+	top: 0;
+	background: #ed8400;
+}
+.header .title {
+    color: #FFF;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+}
+.header span {
+    width: 100%;
+}
+.header .button {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+.header .button.previous {
+    background: url(#{$assetPath}/previous.png) 50% 50% no-repeat;
+    background-size: 50%;
+}
+.gnb {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 600px;
+	font-size: 0;
+	line-height: 0;
+}
+.gnb ul li {
+    width: 20%;
+	height: 70px;
+	display: inline-block;
+}
+.gnb ul li a {
+	display: block;
+	background: #ed8400;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 100px;
+	color: #FFF;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: 50% 25%
+}
+.gnb ul li:nth-child(1) a {
+	background-image: url(#{$assetPath}/bottom01.png);
+	background-size: 25px 21px;
+}
+.gnb ul li:nth-child(2) a {
+	background-image: url(#{$assetPath}/bottom02.png);
+	background-size: 27px 23.5px;
+}
+.gnb ul li:nth-child(3) a {
+	background-image: url(#{$assetPath}/bottom03.png);
+	background-size: 21px 23px;
+}
+.gnb ul li:nth-child(4) a {
+	background-image: url(#{$assetPath}/bottom04.png);
+	background-size: 21px 24px;
+}
+.gnb ul li:nth-child(5) a {
+	background-color: #e66039;
+	background-image: url(#{$assetPath}/bottom05.png);
+	background-size: 27.5px 17.5px;
+}
+.container {
+    padding: 50px 0 70px 0;
+	background: #FFF
+}
+.cntbox {
+	padding: 2%;
+}
+.cntbox.bgorange {
+    padding: 0 2% 2% 2%;
+    color: #FFF
+}
+.splash {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.splash .logo {
+    width: 50%;
+    margin: 0 auto;
+    padding: 65% 0 0 0
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+table th {
+    text-align: left;
+}
+table th, table td {
+}
+.bgwhite {
+    background: #fff
+}
+.bgorange {
+    background: #ed8400
+}

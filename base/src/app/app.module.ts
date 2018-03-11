@@ -9,6 +9,8 @@ import { ROUTES } from './app.routes';
 // Mainpage
 import {MainpageModule} from './main/mainpage.module';
 
+import {ReservationModule} from './reservation/reservation.module';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {MainpageModule} from './main/mainpage.module';
     RouterModule.forRoot(ROUTES, /*{ preloadingStrategy: AppCustomPreloader }*/),
 
     // Pages
-    MainpageModule
+    MainpageModule,
+    ReservationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
