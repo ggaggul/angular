@@ -1,34 +1,23 @@
 <!-- Wrapper-->
-<div class="wrap">
+<div id="wrapper">
 
 	<!-- Left navigation bar -->
 	<app-navigation></app-navigation>
-	
-	<!-- Top navigation -->
-	<app-topnavbar></app-topnavbar>
-	
-	<div class="mainhead">
-        <!-- login 전 -->
-        <p class="title">찾아오는 즐거운 투터링 썸타임</p>
-        실시간 1:1 투터링 매칭 020 서비스
-        <!-- /login 전 -->
-        <!-- login
-        <p class="title">다음썸타임</p>
-        10월 10일 6PM, Mohit  여의도 스타벅스
-        /login 후 -->
-        <div class="notice">
-            <a href="#">오픈이벤트 10월 31일까지 모든 썸은 50% 할인</a>
-        </div>
-    </div>
 
 	<!-- Main page wrapper -->
-	<div class="container main">
+	<div id="page-wrapper" class="gray-bg">
+
+		<!-- Top navigation -->
+		<app-topnavbar></app-topnavbar>
+
 		<!-- Main view/routes wrapper-->
 		<router-outlet (deactivate)="onDeactivate()"></router-outlet>
+
+		<!-- Footer -->
+		<app-footer></app-footer>
+
 	</div>
 	<!-- End page wrapper-->
-	
-	<!-- gnb -->
-	<app-footer></app-footer>
+
 </div>
-<!-- End wrapper-->
+	<!-- End wrapper-->

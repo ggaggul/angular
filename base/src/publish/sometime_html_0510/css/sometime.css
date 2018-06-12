@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* layout */
+.wrap {width: 100%;}
+.header {width: 100%; height: 50px; background: #FFF; text-align: center; position: fixed; top: 0; z-index: 100}
+.header .title {font-size: 18px; font-weight: 600; line-height: 50px; display: inline-block}
+.header .previous {height: 35px; display: inline-block; position: absolute; top: 8px; font-size: 0; width: 40px; left: 0; background: url(../images/btn-previous.svg) 50% 50% no-repeat; background-size: 40%;}
+.header .button {color: #f47626; padding: 0 15px; font-size: 16px; line-height: 50px; position: absolute; top: 0; right: 0; display: block; background: none; font-weight: 600; border: none}
+.change {border-bottom: 1px solid #d1d1d1;}
+.gnb {width: 100%; height: 50px; background: #FFF; text-align: center; border-top: 1px solid #d1d1d1; position: fixed; bottom: 0}
+.gnb ul {font-size: 0; width: 100%; max-width: 640px; display: inline-block;}
+.gnb li {display: inline-block; width: 20%; text-align: center; vertical-align: middle; padding-top: 7px}
+.gnb a {width: 42px; height: 35.5px; background-size: 100%; display: inline-block;}
+.gnb a.home {background-image: url(../images/btn-home.svg);}
+.gnb a.reservation {background-image: url(../images/btn-reser.svg);}
+.gnb a.mypage {background-image: url(../images/btn-myrg.svg);}
+.gnb a.myinfo {background-image: url(../images/btn-myinfo.svg);}
+.gnb a.fortoturs {background-image: url(../images/btn-tutors.svg);}
+.gnb a.reservation.active  {background-image: url(../images/btn-reser-over.svg);}
+.gnb a.mypage.active {background-image: url(../images/btn-myrg-over.svg);}
+.gnb a.myinfo.active {background-image: url(../images/btn-myinfo-over.svg);}
+.gnb a.fortoturs {background-image: url(../images/btn-tutors.svg);}
+.container {margin: 50px 0 50px 0; height: auto; overflow: hidden;}
+.cntbox {padding: 3%}
+
+/* contents */
+.datearea {width: 100%; line-height: 50px; text-align: left; font-size: 16px; overflow: hidden; background: url(../images/btn-search.png) 96% 50% no-repeat; background-size: 22px; margin: 8px 0 0 0}
+.datearea .openmodal {border: 1px solid #d1d1d1; text-indent: 5%}
+.sorting {font-size: 0; text-align: left; margin: 10px 0}
+.sorting li {display: inline-block; line-height: 13px; height: 13px}
+.sorting li:first-child {border-right: 1px solid #3e3a44}
+.sorting li a {width: 100%; height: 100%; display: inline-block; font-size: 12px; padding: 0 15px;}
+.sorting li.active a {color: #f47626; font-weight: 600}
+.tutor_list {width: 97%; margin: 0 auto; font-size: 0; padding-bottom: 10px}
+.tutor_list .tutor {width: 46%; margin: 8px 2% 20px 2%; display: inline-block; vertical-align: top;}
+.tutor_list .tutor a {color: #222}
+.tutor_list .tutor .photo img {width: 100%; margin: 0 0 8px 0}
+.tutor_list .tutor .category {font-size: 11px; font-weight: 600; color: #adadad}
+.tutor_list .tutor .name {font-size: 17px; font-weight: 600; line-height: 1.6}
+.tutor_list .tutor .name span {padding-left: 5px; color: #f47626; font-size: 15px}
+.tutor_list .tutor .summary {font-size: 14px; height: 36px; overflow: hidden;}
+.tutor_view .btn_reserv {width: 60px; height: 60px; display: block; background: #f47626 url(../images/ico-calenw.svg) 50% 25% no-repeat; background-size: 25px; text-align: center; color: #FFF; line-height: 90px; overflow: hidden; border-radius: 100%; position: fixed; right: 4%; bottom: 80px; border: none}
+.tutor_view .title {margin: 10px 3% 10px 3%; border-radius: 3px; border: solid 1px #d1d1d1;}
+.tutor_view .photo img {width: 100%}
+.tutor_view .intro {margin: 15px;}
+.tutor_view .info {margin: 15px 3% 10px 3%; padding: 0 15px}
+.tutor_view .info  table {width: 100%}
+.tutor_view .info  table td {padding: 4px 0 4px 0}
+.tutor_view .info  table td:first-child {width: 30%}
+.tutor_view .info .hashtag {padding: 5px 0}
+.tutor_view .info .hashtag span {padding: 0 8px 0 0; color: #f76b13}
+.tutor_view .info .star {font-size: 0}
+.tutor_view .info .star img {width: 16px;}
+.tutor_view .info .point {padding: 0 0 0 5px}
+.tutor_view .info .count {color: #868686}
+.tutor_view .review_list {background: #f8f8f8; overflow:hidden; padding: 5px 0 20px 0}
+.tutor_view .review {margin: 15px 25px 0 25px}
+.tutor_view .review .date {font-size: 15px; color: #444}
+.tutor_view .review .user {font-size: 16px; color: #f47626}
+.tutor_view .review .comment {font-size: 14px; color: #666; margin: 3px 0 0 0}
+.reservation {}
+.reservation .summary {background: #f8f8f8; border-bottom: 1px solid #d1d1d1; padding: 15px 15px 15px 30px; margin-top: 10px}
+.reservation .summary table {width: 100%}
+.reservation .summary table td {padding: 5px 0; font-size: 16px; vertical-align: middle;}
+.reservation .summary table td img {width: 22px; vertical-align: middle;}
+.reservation .today {font-size: 17px; margin: 0 0 10px 0}
+.reservation .today span {color: #f47626}
+.reservation .time {font-size: 0; text-align: left; margin: 25px 0}
+.reservation .time .button {background: linear-gradient(to top, #e8e8e8, #ffffff 78%); border: 1px solid #d1d1d1; line-height: 35px; height: 35px; font-size: 17px; width: 22%; margin: 1%; border-radius: 2px}
+.reservation .time .active {background: linear-gradient(to top, #f6ede3 1%, #ffffff 78%); border: solid 1px #fc6f1a; color: #fc6f1a; font-weight: 600}
+.reservation .time .disable {background: linear-gradient(to top, #f1f1f1 1%, #f8f8f8 78%); border: solid 1px #fc6f1a; color: #fc6f1a; border: 1px solid #eee; color: #ccc}
+.reservation .info {margin: 15px}
+.reservation .info .title {line-height: 40px; font-size: 17px; margin: 10px 0 0 0; font-weight: 600}
+.reservation .info .inputbox {border: 1px solid #d1d1d1; margin: 0 0 8px 0}
+.reservation .info .input {width: 100%; text-indent: 18px; border: none; line-height: 50px; height: 50px}
+.reservation .info .input:disabled {opacity: 1}
+.reservation .info .desc {margin: 0 0 15px 0; overflow: hidden;}
+.reservation .info .desc p {margin: 0 0 15px 0; overflow: hidden; font-size: 16px; line-height: 1.6}
+.reservation .head {font-size: 17px; font-weight: 600; margin: 25px 0 0 0; padding: 10px 15px}
+.reservation .head .orange {padding: 0 8px 0 0}
+.reservation .head .button {border-radius: 3px; border: solid 1px #d1d1d1; background: #FFF; padding: 5px 10px; float: right;}
+.reservation .blank {background: url(../images/ico-nosome.svg) 50% 0 no-repeat; background-size: 51px; text-align: center; color: #8f8f8f; padding: 70px 0 0 0; margin: 140px 0 0 0}
+.reservation .blank p:nth-child(1) {font-size: 19px; color: #222; line-height: 2}
+.pastreserv {margin: 35px 0 10px 0}
+.pastreserv .title {padding: 15px; font-size: 17px}
+.pastreserv .some {position: relative; padding: 15px; border-top: 1px solid #d1d1d1}
+.pastreserv .some ul {font-size: 0; position: absolute; top: 15px; right: 15px}
+.pastreserv .some ul li {display: inline-block; margin: 0 5px}
+.pastreserv .some .button {vertical-align: top;}
+.pastreserv .some .button img {width: 30px; height: 30px; vertical-align: top;}
+.pastreserv .some .orange {padding: 0 8px 0 0}
+
+/* calendar */
+.calendar {text-align: center; font-size: 0; padding: 15px 0 10px 0;}
+.month {line-height: 50px; clear: both; overflow: hidden}
+.month ul li {font-size: 20px; text-transform: uppercase; letter-spacing: 3px;}
+.month ul li span {color: #f47626; font-size: 26px}
+.month .prev {float: left;}
+.month .next {float: right;}
+.month li.prev span, .month li.next span {width: 50px; height: 100%; display: block; font-size: 16px}
+.weekdays {background: #666; height: 28px; line-height: 28px; margin: 5px 0 0 0}
+.weekdays li {display: inline-block; width: 14%; font-size: 14px; color: #FFF; border-right: 1px solid #FFF}
+.weekdays li:first-child {background: #f47626}
+.weekdays li:last-child {border: none}
+.days li {display: inline-block; width: 14%; font-size: 15px; font-weight: 500; border-right: 1px solid #d1d1d1; border-bottom: 1px solid #d1d1d1; line-height: 40px}
+.days li:nth-child(7n+0) {border-right: none}
+.days li:nth-child(7n+1) {color: #f47626}
+.days li.active {border-right: 1px solid #f79f67;}
+.days li.active span {width:100%; height: 100%; display: block; background: rgba(244, 118, 38, .7); color: #FFF}
+.days li.start span {border-radius: 20px 0 0 20px; background: rgba(244, 118, 38, 1)}
+.days li.start {border-right: 1px solid #f47626;}
+.days li.end {border-right: 1px solid #d1d1d1;}
+.days li.end span {border-radius: 0 20px 20px 0; background: rgba(244, 118, 38, 1);}
+.weeklycal {text-align: center; font-size: 0; padding: 15px 0 10px 0; margin: 10px 0; border-bottom: 1px solid #d1d1d1;}
+.weeklycal .week {height: 28px; line-height: 28px; clear: both; overflow: hidden;}
+.weeklycal .week li {display: inline-block; width: 14.2%; font-size: 14px; color: #222; border: none}
+.weeklycal .week li:first-child, .weeklycal .week li:last-child {color: #f47626}
+.weeklycal .date {font-size: 17px; font-weight: 600; border: none; text-align:center;}
+.weeklycal .date span {display: inline-block; width: 44px; height: 44px; border-radius: 100%; line-height: 44px}
+.weeklycal .date .active span {background: #f47626; color: #FFF}
+.weeklycal .slick-slide {margin: 0}
+.weeklycal .slider:focus {border: none}
+.slider {width: 100%; margin: 10px auto;}
+.slick-slide {margin: 0px 20px;}
+.myreview {position: relative; text-align: center; font-size: 16px}
+.myreview .button {position: absolute; top: 10px; right: -10px}
+.myreview .button span {color: #999 !important; font-size: 36px !important;}
+.myreview .title {font-size: 17px; font-weight: 600; line-height: 50px; padding: 40px 0 0 0}
+.myreview .star {font-size: 0; display: inline-block; margin: 15px 0 20px 0}
+.myreview .star img {width: 27px;}
+.myreview .textarea {width: 80%; height: 100px; padding: 4%}
+.myreview .btnarea {width: 90%; margin: 0 auto; text-align: left; overflow: hidden; clear: both;}
+.myreview .btnarea .length {line-height: 30px; font-size: 14px}
+.myreview .btnarea .submit {float: right; padding: 25px 0 25px 0; border: none; background: none; color: #f47626; font-size: 17px; font-weight: 600}
+.myinfo {}
+.myinfo table {width: 90%; margin: 0 5% 0 5%; font-size: 15px;}
+.myinfo table td:first-child {width: 100px; line-height: 45px; padding: 3px 0 3px 3px;}
+.myinfo .input {padding: 0 8px; width: 90%}
+.myinfo .textarea {padding: 8px; height: 60px; width: 93%}
+.myinfo ul {}
+.myinfo ul li {border-top: 1px solid #e3e3e3}
+.myinfo ul li a {width: 100%; height: 100%; display: block; line-height: 60px; text-indent: 60px; font-size: 15px; font-weight: 600}
+.myinfo ul li a.guide {background: url(../images/ico-guide.svg) no-repeat 18px 50%; background-size: 30px}
+.myinfo ul li a.faq {background: url(../images/ico-faq.svg) no-repeat 18px 50%; background-size: 30px}
+
+/* main */
+#main {}
+#main .header .title {font-size: 23px;}
+#main .catchphrase {font-size: 16px; text-align: center; margin: 10px 0 17px 0; font-weight: 600}
+#main .catchphrase p:nth-child(1) {font-size: 14px; color: #fc6f1a}
+#main .mysome {font-size: 16px; margin: 10px 0 17px 15px; font-weight: 600}
+#main .mysome p:nth-child(1) {font-size: 14px; color: #fc6f1a}
+#main .mysome a {background: url(../images/btn-go.svg) no-repeat 95% 50%; background-size: 25px; height: 25px; margin: 0 0 10px 0; display: block; line-height: 25px}
+#main .notice {background: url(../images/ico-ticket.png) no-repeat 15px 50%; background-size: 25px; height: 25px; margin: 0 0 10px 0}
+#main .notice p {text-indent: 50px; line-height: 25px}
+.hotdealbox {width: 100%; overflow-x: scroll;}
+.hotdeal {display: table; font-size: 0; margin: 6px 6px 20px 6px}
+.hotdeal .tutor_list {display: table-row;}
+.hotdeal .tutor_cell {display: table-cell;}
+.hotdeal .tutor {vertical-align: top; min-width: 300px; height: 300px; border: solid 1px #d1d1d1; border-radius: 3px; margin: 6px; position: relative;}
+.hotdeal .tutor_cell:last-child .tutor {margin-right: 13px}
+.hotdeal .tutor a {color: #222}
+.hotdeal .tutor .photo img {margin: 0 0 8px 0}
+.hotdeal .tutor .name {font-size: 17px; font-weight: 600; line-height: 1.6; padding: 6px 0 0 15px}
+.hotdeal .tutor .category {font-size: 12px !important; font-weight: 600; color: #adadad !important}
+.hotdeal .tutor .name span {padding-left: 5px; color: #f47626; font-size: 15px}
+.hotdeal .tutor .summary {font-size: 14px; height: 36px; overflow: hidden; padding: 5px 80px 0 15px}
+.hotdeal .btn_reserv {width: 50px; height: 50px; display: block; background: #f47626 url(../images/ico-calenw.svg) 50% 50% no-repeat; background-size: 30px; text-align: center; color: #FFF; line-height: 90px; overflow: hidden; border-radius: 100%; position: absolute; right: 12px; bottom: 15px; border: none}
+.btn_more {padding: 0 15px; color: #f47626; font-size: 15px; margin: 0 0 35px 0; display: block; font-weight: 600;}
+#splash {width: 100%; height: 100%; background: #ea6d1d url(../images/logo.png) 50% 50% no-repeat; background-size: 200px; font-size: 0; text-indent: -9999px}
+.faq {border-bottom:1px solid #e5e5e5; font-style: 16px}
+.faq .q {border-top:1px solid #e5e5e5;}
+.faq .q a.trigger{display:block; padding:20px; font-weight:600;}
+.faq .q a.trigger span {display: inline-block; width: 24px; height: 24px; line-height: 24px; color: #FFF; background: #ea6d1d; text-align: center; border-radius: 100%; margin: 0 15px 0 0; font-size: 16px}
+.faq .q a.trigger:hover, .faq .q a.trigger:active, .faq .q a.trigger:focus {color:#111;}
+.faq .a {padding:20px; line-height:1.5; background:#f8f8f8; border-top:1px solid #e5e5e5}
+
+/* loginbox */
+.loginbox {width: 90%; margin: 0 auto; padding: 30px 0 0 0}
+.loginbox .input {border-radius: 4px; width: 100%; text-indent: 15px; margin: 0 0 8px 0}
+.loginbox .button {width: 100%; height: 50px; line-height: 50px; border: none; border-radius: 4px; margin: 0 0 8px 0; color: #FFF; font-size: 17px}
+.loginbox .login {background: #3e3a44}
+.loginbox .signup {background: #ea6d1d}
+.loginbox .signup1 {background: #3e3a44}
+.loginbox .google {background: #da4b42}
+.loginbox .connect {text-align: center; height: 100px; margin: 70px 0 0 0}
+.loginbox .connect p {height: 40px; color: #8a8a8a}
+.loginbox .connect p span {background: #FFF; padding: 0 5px}
+.loginbox .connect p::after {content: ""; width: 100%; height: 1px; background: #e5e5e5; display: block; margin: -10px 0 0 0}
+.loginbox .confirm {margin: 10px 0 0 0}
+.loginbox .confirm .title {font-size: 15px; line-height: 2; font-weight: bold;}
+.loginbox .confirm .input {width: 65%; float: left; vertical-align: top}
+.loginbox .confirm .button {width: 33%; float: right; vertical-align: top; height: 45px; line-height: 45px; background: #ea6d1d}
+
+/* modal */
+.modal {z-index:101; display:none; padding-top:118px; position:fixed; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgb(0,0,0); background-color:rgba(0,0,0,0.4)}
+.modal.myreview {padding-top:68px;}
+.modalbox {margin:auto; background-color:#fff; position:relative; padding:0; outline:0; width:94%}
+.modal .container {margin: 0}
+.modal .container:after,.modal .container:before {content:"";display:table;clear:both}
+.modal .button {border: none; display:inline-block; padding:0 20px; overflow:hidden; float: right; line-height: 30px; margin: 0 0 10px 0; vertical-align: top;}
+.modal .button span {color: #f47626; font-size: 22px; line-height: 40px; padding: 0 10px 0 0}
+.openmodal {width: inherit; height: inherit; line-height: inherit; text-align: inherit; text-indent: inherit; font-size: inherit; border: none; background: none}
+
+/* form */
+.custom-select {position: relative; border-top: 1px solid #d1d1d1; line-height: 35px}
+.custom-select select {display: none;}
+.select-selected {background-color: #FFF;}
+.select-selected:after {position: absolute; content: ""; top: 23px; right: 5%; width: 12px; height: 10px; background: url(../images/btn-open.png) no-repeat; background-size: 100%}
+.select-selected.select-arrow-active:after {background: none}
+.select-items div,.select-selected {color: #222; padding: 8px 16px; border: 1px solid transparent; border-color: transparent  #d1d1d1  #d1d1d1 #d1d1d1; font-size: 16px}
+.select-items {position: absolute; background-color: #f8f8f8; top: 100%; left: 0; right: 0; z-index: 99;}
+.select-hide {display: none;}
+.select-items div:hover, .same-as-selected {background-color: rgba(0, 0, 0, 0.1);}
+
+.input {height: 45px; line-height: 45px; font-size: 16px; border: 1px solid #d1d1d1; background: #FFF; border-radius: 0}
+input, textarea {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+::-webkit-input-placeholder {color: #222;}
+:-moz-placeholder {color: #222; opacity: 1;}
+::-moz-placeholder {color: #222; opacity:  1;}
+:-ms-input-placeholder {color:  #222;}
+::placeholder {color: #222; opacity:  1;}
+textarea {border: 1px solid #bfbfbf; font-size: 16px; border-radius: 0}
+
+/* size, align, color */
+.orange {color: #f47626}
+.fL {float: left;}
+.fR {float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test {}

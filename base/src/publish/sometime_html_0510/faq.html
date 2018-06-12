@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SometimeLearning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/sometime.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sometime.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+</head>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+
+	var article = $('.faq .article');
+		 article.addClass('hide');
+		 article.find('.a').slideUp(100);
+
+	$('.faq .article .trigger').click(function(){
+		var myArticle = $(this).parents('.article:first');
+		if(myArticle.hasClass('hide')){
+			article.addClass('hide').removeClass('show');
+			article.find('.a').slideUp(100);
+			myArticle.removeClass('hide').addClass('show');
+			myArticle.find('.a').slideDown(100);
+		} else {
+			myArticle.removeClass('show').addClass('hide');
+			myArticle.find('.a').slideUp(100);
+		}
+	});
+
+	$('.faq .hgroup .trigger').click(function(){
+		var hidden = $('.faq .article.hide').length;
+		if(hidden > 0){
+			article.removeClass('hide').addClass('show');
+			article.find('.a').slideDown(100);
+		} else {
+			article.removeClass('show').addClass('hide');
+			article.find('.a').slideUp(100);
+		}
+	});
+
+});
+//]]>
+</script>
+<body>
+
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <p class="title">FAQ</p>
+        <a href="javascript:history.back();" class="previous">뒤로</a>
+    </div>
+    <!-- /header -->
+    <!-- container -->
+    <div class="container">
+        <!-- faq -->
+        <div class="faq">
+        	<ul>
+        		<li class="article">
+        			<p class="q"><a href="#a1" class="trigger"><span>1</span>예약 변경 및 취소</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a2" class="trigger"><span>2</span>결재 및 취소 관련</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a3" class="trigger"><span>3</span>Tutor 관리는 어떻게 하나요?</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a4" class="trigger"><span>4</span>수업이 맘에 안들어요</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a5" class="trigger"><span>5</span>예약 변경 및 취소</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a6" class="trigger"><span>6</span>결재 및 취소 관련</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a7" class="trigger"><span>7</span>Tutor 관리는 어떻게 하나요?</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+                <li class="article">
+        			<p class="q"><a href="#a8" class="trigger"><span>8</span>수업이 맘에 안들어요</a></p>
+        			<p class="a">답변입니다.</p>
+        		</li>
+        	</ul>
+        </div>
+        <!-- /faq -->
+    </div>
+    <!-- /container -->
+    <!-- gnb -->
+    <div class="gnb">
+        <ul>
+            <li><a href="main.html" class="home">홈</a></li>
+            <li><a href="tutor_list.html" class="reservation">썸예약</a></li>
+            <li><a href="mypage.html" class="mypage">나의예약</a></li>
+            <li><a href="myinfo.html" class="myinfo">내정보</a></li>
+            <li><a href="#" class="fortoturs">For Tutors</a></li>
+        </ul>
+    </div>
+    <!-- /gnb -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SometimeLearning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/sometime.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sometime.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <!-- header -->
+    <div class="header">
+        <p class="title">나의예약</p>
+        <a href="javascript:history.back();" class="previous">뒤로</a>
+    </div>
+    <!-- /header -->
+    <!-- container -->
+    <div class="container">
+        <!-- reservation -->
+        <div class="reservation">
+            <div class="head">
+                <span class="orange">5월 7일</span>토요일, 6PM
+                <button type="button" name="" class="button">예약취소</button>
+            </div>
+            <div class="summary">
+                <table>
+                    <colgroup>
+                        <col width="10%">
+                        <col width="35%">
+                        <col width="">
+                    </colgroup>
+                    <tr>
+                        <td><img src="images/ico-area.svg" alt=""></td><td>Area</td><td>여의도</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ico-tutors-s.svg" alt=""></td><td>Tutor</td><td>Mohit</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="reservation">
+            <div class="head">
+                <span class="orange">5월 13일</span>토요일, 6PM
+                <button type="button" name="" class="button">예약취소</button>
+            </div>
+            <div class="summary">
+                <table>
+                    <colgroup>
+                        <col width="10%">
+                        <col width="35%">
+                        <col width="">
+                    </colgroup>
+                    <tr>
+                        <td><img src="images/ico-area.svg" alt=""></td><td>Area</td><td>여의도</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/ico-tutors-s.svg" alt=""></td><td>Tutor</td><td>Mohit</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- /reservation -->
+        <!-- past reservation -->
+        <div class="pastreserv">
+            <div class="title">
+                SOMETIME 활동내용
+            </div>
+            <div class="some">
+                <span class="orange">4월 10일</span>일요일 6PM, 강남역<br>Emma Stone
+                <ul>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="openmodal button">
+                        <img src="images/btn-review.png" alt="리뷰 작성"></button></li>
+                    <li><a href="tutor_view.html" class="button"><img src="images/ico-calenorg.svg" alt="다시 예약"></a></li>
+                </ul>
+            </div>
+            <div class="some">
+                <span class="orange">4월 10일</span>일요일 6PM, 강남역<br>Emma Stone
+                <ul>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="openmodal button">
+                        <img src="images/btn-review.png" alt="리뷰 작성"></button></li>
+                    <li><a href="tutor_view.html" class="button"><img src="images/ico-calenorg.svg" alt="다시 예약"></a></li>
+                </ul>
+            </div>
+            <div class="some">
+                <span class="orange">4월 10일</span>일요일 6PM, 강남역<br>Emma Stone
+                <ul>
+                    <li><button onclick="document.getElementById('id01').style.display='block'" class="openmodal button">
+                        <img src="images/btn-review.png" alt="리뷰 작성"></button></li>
+                    <li><a href="tutor_view.html" class="button"><img src="images/ico-calenorg.svg" alt="다시 예약"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /past reservation -->
+    </div>
+    <!-- /container -->
+    <!-- gnb -->
+    <div class="gnb">
+        <ul>
+            <li><a href="main.html" class="home">홈</a></li>
+            <li><a href="tutor_list.html" class="reservation">썸예약</a></li>
+            <li><a href="mypage.html" class="mypage active">나의예약</a></li>
+            <li><a href="myinfo.html" class="myinfo">내정보</a></li>
+            <li><a href="#" class="fortoturs">For Tutors</a></li>
+        </ul>
+    </div>
+    <!-- /gnb -->
+</div>
+
+<!-- modal -->
+<div id="id01" class="modal myreview">
+    <div class="modalbox">
+        <div class="container">
+            <!-- myreview -->
+            <div class="myreview">
+                <span onclick="document.getElementById('id01').style.display='none'" class="button"><span>&times;</span></span>
+                <p class="title">평가하기</p>
+                <p>6월 30일 금요일 5PM, 여의도, Jenny</p>
+                <span class="star">
+                    <img src="images/ico_star.svg" alt="">
+                    <img src="images/ico_star.svg" alt="">
+                    <img src="images/ico_star.svg" alt="">
+                    <img src="images/ico_star_half.svg" alt="">
+                    <img src="images/ico_star_grey.svg" alt="">
+                </span>
+                <p class="title">간단히 리뷰 남기기</p>
+                <textarea name="" class="textarea">50자 이내로 평가하기</textarea>
+                <div class="btnarea">
+                    <span class="length"><span class="orange">32</span> /50</span>
+                    <button type="button" name=""  onclick="document.getElementById('id01').style.display='none'" class="submit">저장</button>
+                </div>
+            </div>
+            <!-- /myreview -->
+        </div>
+    </div>
+</div>
+<!-- /modal -->
+
+</body>
+</html>
