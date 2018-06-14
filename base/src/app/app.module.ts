@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -6,8 +7,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { ROUTES } from './app.routes';
 
-// Mainpage
-import {MainpageModule} from './main/mainpage.module';
+import {MainModule} from './main/main.module';
+import {ReservationModule} from './reservation/reservation.module';
+import {TutorModule} from './tutor/tutor.module';
+import {MypageModule} from  './mypage/mypage.module';
 
 
 @NgModule({
@@ -17,13 +20,17 @@ import {MainpageModule} from './main/mainpage.module';
   imports: [
     // Base
     BrowserModule,
+    BrowserAnimationsModule,
     CoreModule,
 
     // Route
     RouterModule.forRoot(ROUTES, /*{ preloadingStrategy: AppCustomPreloader }*/),
 
     // Pages
-    MainpageModule
+    MainModule,
+    ReservationModule,
+    TutorModule,
+    MypageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

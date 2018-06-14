@@ -2,10 +2,12 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 
-import {BasicLayoutComponent} from './basicLayout.component';
+import {MainLayoutComponent} from './mainLayout.component';
+import {DetailLayoutComponent} from './detailLayout.component';
 import {BlankLayoutComponent} from './blankLayout.component';
 
 import {TopNavbarComponent} from '../topnavbar/topnavbar.component';
+import {TopNavbarReserveComponent} from '../topnavbar/topnavbar-reserve.component';
 import {NavigationComponent} from '../navigation/navigation.component';
 import {FooterComponent} from '../footer/footer.component';
 
@@ -16,17 +18,21 @@ import {FooterComponent} from '../footer/footer.component';
   ],
   declarations: [
     FooterComponent,
-    BasicLayoutComponent,
+    MainLayoutComponent,
+    DetailLayoutComponent,
     BlankLayoutComponent,
     NavigationComponent,
-    TopNavbarComponent
+    TopNavbarComponent,
+    TopNavbarReserveComponent
   ],
   exports: [
     FooterComponent,
-    BasicLayoutComponent,
+    MainLayoutComponent,
+    DetailLayoutComponent,
     BlankLayoutComponent,
     NavigationComponent,
-    TopNavbarComponent
+    TopNavbarComponent,
+    TopNavbarReserveComponent
   ]
 })
 

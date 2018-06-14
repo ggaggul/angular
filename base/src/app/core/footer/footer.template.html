@@ -1,1 +1,11 @@
-<div>footer</div>
+<!-- gnb -->
+<div class="gnb">
+  <ul>
+    <li><a [routerLink]="['/main']" [ngClass]="{active: activeRoute('main')}" class="home">홈</a></li>
+    <li><a [routerLink]="['/reservation']" [ngClass]="{active: activeRoute('reservation')}" class="reservation">썸예약</a></li>
+    <li><a [routerLink]="['/mypage']" [ngClass]="{active: activeRoute('mypage')}" class="mypage">나의예약</a></li>
+    <li><a [routerLink]="['/myinfo']" [ngClass]="{active: activeRoute('myinfo')}" class="myinfo">내정보</a></li>
+    <li><a href="#" class="fortoturs">For Tutors</a></li>
+  </ul>
+</div>
+<!-- /gnb -->

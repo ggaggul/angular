@@ -1,11 +1,11 @@
 import {Component, AfterViewInit} from '@angular/core';
 
 @Component({
-  selector : 'app-main-mainpage',
-  templateUrl : './mainpage.template.html'
+  selector : 'app-login',
+  templateUrl : './login.template.html'
 })
 
-export class MainpageComponent implements AfterViewInit {
+export class LoginComponent implements AfterViewInit {
 
   constructor() {
   }

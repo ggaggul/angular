@@ -1,10 +1,10 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-basic-layout',
-  templateUrl: './basicLayout.template.html'
+  selector: 'app-detail-layout',
+  templateUrl: './detailLayout.template.html'
 })
-export class BasicLayoutComponent implements OnInit {
+export class DetailLayoutComponent implements OnInit {
 
   @HostListener('resize') resize() {
     // do work

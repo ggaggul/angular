@@ -4,8 +4,8 @@ import { LayoutsModule } from './layouts/layouts.module';
 
 @NgModule({
   imports: [
-      CommonModule, // we use ngFor
-      LayoutsModule
+    CommonModule, // we use ngFor
+    LayoutsModule
   ],
   exports: [
   ],

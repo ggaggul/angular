@@ -1,22 +1,83 @@
 import {Routes} from '@angular/router';
 
 // Base
-import {BasicLayoutComponent} from './core/layouts/basicLayout.component';
-import {MainpageComponent} from './main/home/mainpage.component';
+import {MainLayoutComponent} from './core/layouts/mainLayout.component';
+import {DetailLayoutComponent} from './core/layouts/detailLayout.component';
+import {HomeComponent} from './main/home/home.component';
+import {ReservationComponent} from "./reservation/reservation.component";
+import {TutorListComponent} from './tutor/list/tutor-list.component';
+import {TutorDetailComponent} from './tutor/detail/tutor-detail.component';
+import {MypageComponent} from './mypage/mypage.component';
+import {MyinfoComponent} from './main/myinfo/myinfo.component';
+import {FaqComponent} from './main/faq/faq.component';
+import {LoginComponent} from './main/login/login.component';
+import {SigninComponent} from './main/signin/signin.component';
 
 // Mainpage
 export const ROUTES: Routes = [
-    // Main redirect
-    {path: '', pathMatch: 'full', redirectTo: 'main'},
+  // Main redirect
+  {path: '', pathMatch: 'full', redirectTo: 'main'},
 
-    // App views
-    {
-      path: 'main', component: BasicLayoutComponent,
-      children: [
-        {path: '', pathMatch: 'full', redirectTo: 'index'},
-        {path: 'index', component: MainpageComponent}
-      ]
-    },
+  // App views
+  {
+    path: 'main', component: MainLayoutComponent,
+    children: [
+      {path: '', component: HomeComponent}
+    ]
+  },
+
+  {
+    path: 'reservation', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: ReservationComponent}
+    ]
+  },
+
+  {
+    path: 'tutor', component: DetailLayoutComponent,
+    children: [
+      {path: '', pathMatch: 'full', redirectTo: 'list'},
+      {path: 'list', component: TutorListComponent},
+      {path: 'detail', component: TutorDetailComponent}
+    ]
+  },
+
+  {
+    path: 'mypage', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: MypageComponent}
+    ]
+  },
+
+  {
+    path: 'myinfo', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: MyinfoComponent}
+    ]
+  },
+
+  {
+    path: 'faq', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: FaqComponent}
+    ]
+  },
+
+  {
+    path: 'login', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: LoginComponent}
+    ]
+  },
+
+  {
+    path: 'siginin', component: DetailLayoutComponent,
+    children: [
+      {path: '', component: SigninComponent}
+    ]
+  },
+
+
 
     // lazy loading menu
     /*{path: 'main', loadChildren : './main/mainpage.module#MainpageModule', canActivateChild: [SellerGuard]},*/
