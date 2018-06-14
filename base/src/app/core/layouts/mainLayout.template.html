@@ -1,5 +1,5 @@
 <!-- Wrapper-->
-<div class="wrap" id="main">
+<div class="wrap" id="main" [@fadeInAnimation]="getState(o)">
 
 	<!-- Left navigation bar -->
 	<!--<app-navigation></app-navigation>-->
@@ -8,7 +8,7 @@
   <app-topnavbar></app-topnavbar>
 
   <!-- Main view/routes wrapper-->
-  <router-outlet (deactivate)="onDeactivate()"></router-outlet>
+  <router-outlet (deactivate)="onDeactivate()" #o="outlet"></router-outlet>
 
   <!-- Footer -->
   <app-footer></app-footer>

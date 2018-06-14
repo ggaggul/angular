@@ -5,10 +5,12 @@
 	<!--<app-navigation></app-navigation>-->
 
   <!-- Top navigation -->
-  <app-topnavbar-reserve></app-topnavbar-reserve>
+  <app-topnavbar-detail></app-topnavbar-detail>
 
   <!-- Main view/routes wrapper-->
-  <router-outlet (deactivate)="onDeactivate()"></router-outlet>
+  <div [@fadeInAnimation]="getState(o)">
+    <router-outlet (deactivate)="onDeactivate()" #o="outlet"></router-outlet>
+  </div>
 
   <!-- Footer -->
   <app-footer></app-footer>

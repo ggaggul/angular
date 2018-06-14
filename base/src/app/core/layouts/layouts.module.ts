@@ -7,7 +7,7 @@ import {DetailLayoutComponent} from './detailLayout.component';
 import {BlankLayoutComponent} from './blankLayout.component';
 
 import {TopNavbarComponent} from '../topnavbar/topnavbar.component';
-import {TopNavbarReserveComponent} from '../topnavbar/topnavbar-reserve.component';
+import {TopNavbarReserveComponent} from '../topnavbar/topnavbar-detail.component';
 import {NavigationComponent} from '../navigation/navigation.component';
 import {FooterComponent} from '../footer/footer.component';
 
